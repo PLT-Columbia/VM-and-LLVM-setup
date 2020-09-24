@@ -55,3 +55,38 @@ You may choose to use other open-source software to create your VMs. If you do s
 
 ### Setting Up LLVM (5 Points)
 
+LLVM provides compiler technologies designed for compile-time and runtime optimization. Clang is a C/C++ compiler front-end that leverages the LLVM back-end infrastructure. In this course, you will build new modules on top of the LLVM/Clang compiler framework.
+
+You need to build LLVM and Clang by following the instructions found in the [LLVM/Clang website](http://clang.llvm.org/get_started.html). You can also run the `build-llvm.sh` shell script we have provided, which will execute all of the required commands for you.
+* Build LLVM and Clang from the LLVM source in debug mode. Note that it may take a few hours for building to complete, so we recommend you do not complete this at the last minute.
+* For this repository, we added the LLVM source from this [commit](https://github.com/llvm/llvm-project/tree/d1be928d23fe6b6770be007c7fd0753ca4d17516); you may use this reference for all future assignments.
+
+Here is a <ins>**non-exhaustive list**</ins> of problems you might face during the setup process and how you would resolve them:
+
+* If you face a problem with `cmake` version compatibility, refer to this [solution](https://askubuntu.com/a/829311/).
+* Before building LLVM and Clang, add 8 GB of swap space in Ubuntu, as building LLVM and Clang will consume all of the memory. This [blog](https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/) shows how to add swap space. Run `sudo swapoff -a` to first deactivate the swap space before creating the swap file.
+* In case of out-of-memory issues during linking, add the `-DLLVM_USE_LINKER=gold` parameter in `cmake` to use the gold linker. The gold linker is faster and uses less memory.
+* If there is any error during the building of LLVM and Clang, you can simply rerun `make` to perform an incremental build.
+
+Finally, here are some valuable suggestions:
+* Use `make -j <cores>` to take advantage of multiple CPU cores (_e.g._, `make -j 4` uses 4 cores). Keep in mind, however, that adding more cores may consume more memory.
+* Feel free to play around (and familiarize yourself) with the [LLVM/Clang examples](http://clang.llvm.org/get_started.html#driver).
+
+
+## Submission
+
+For this programming assignment, please follow these steps for submission:
+
+1. After building Clang and LLVM, rerun the `make` command.
+2. Redirect the output of this command to a file called **_\<uni\>.txt_**. where **_\<uni\>_** is your Columbia UNI number. For example, if your UNI is *foobar123*, then your file will be called **_foobar123.txt_**. Make sure that the **_\<uni\>.txt_** file lives inside the top-level directory of the repository. We will be grading this file, and as long as you have successfully completed the build and redirected the output to this file, you will receive full credit.
+3. Push this file to the remote repository on the master branch (assuming you have Git set up).
+
+
+## Piazza
+
+If you have any questions about this programming assignment, please post them in the Piazza forum for the course, and an instructor will reply to them as soon as possible. Any updates to the assignment itself will be available in Piazza.
+
+
+## Disclaimer
+
+This assignment belongs to Columbia University. It may be freely used for educational purposes.
