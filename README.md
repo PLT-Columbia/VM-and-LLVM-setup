@@ -22,7 +22,7 @@ If you do not have an environment or VM available for setting up LLVM, we sugges
 
 #### Google Cloud VMs
 
-We have allocated Google Cloud (GCloud) credits for each student. Please email or create a private Piazza post to the instructors/TAs expressing your interest in requesting for GCloud credits, and you will be sent a $100 GCloud coupon by email.
+We have allocated Google Cloud (GCloud) credits for each student. Please email or create a private Piazza post to the TAs expressing your interest in requesting for GCloud credits, and you will be sent a $100 GCloud coupon by email.
 
 1. Follow these initial [instructions](http://www.cs.columbia.edu/crf/cloud-cs/) to redeem your course coupon.
 2. Create a project for this class, and give it a name (_e.g._, "coms4115"). This will likely have to be created within the _columbia_ organization. 
