@@ -14,7 +14,7 @@
 
 ## Assignment
 
-This assignment is the second of two assignments involving setting up your environment in preparation for future programming assignments. Here, we will create a virtual machine (optional) and set up LLVM.
+This assignment involves setting up your environment in preparation for future programming assignments. Here, we will create a virtual machine (optional) and set up LLVM.
 
 ### Creating a Virtual Machine (Optional)
 
