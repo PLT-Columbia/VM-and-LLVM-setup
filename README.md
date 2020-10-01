@@ -8,7 +8,7 @@
 **Instructor:** [Prof. Baishakhi Ray](https://www.rayb.info/)
 
 ## Logistics
-- **Announcement Date:** Wednesday, September 30, 2020
+- **Announcement Date:** Thursday, October 1, 2020
 - **Due Date:** Monday, October 5, 2020 by 11:59 PM. <font color="red">**No extensions!**</font>
 - **Total Points:** 5
 
