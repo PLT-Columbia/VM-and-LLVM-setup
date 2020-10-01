@@ -30,7 +30,7 @@ We have allocated Google Cloud (GCloud) credits for each student. Please email o
 	* Leave the region/zone to `us-central1` and `us-central1-a`.
 	* Machine type: `n1-standard-4`
 	* Click "change'' under boot disk to select `Ubuntu 18.04 LTS`, and add at least 120 GB of persistent hard disk (HDD).
-	* Leave the defaults for the remaining options: `Compute Engine Default Service Account`, `Allow default access`, and `Unchecked boxes for Allow HTTP/HTTPS traffic`.
+	* Leave the defaults for the remaining options: `Compute Engine Default Service Account`, `Allow default access`, and unchecked boxes for `Allow HTTP traffic` and `Allow HTTPS traffic`.
 4. Upon creation of the VM, SSH into the machine by clicking the SSH button next to the instance in Compute Engine, or add your SSH keys to log in using your own terminal. More information on access can be found [here](https://cloud.google.com/compute/docs/instances/connecting-to-instance).
 
 <p align="center"> <img src="vm-setup.png" alt="Virtual Machine Settings" width="70%"/> </p>
